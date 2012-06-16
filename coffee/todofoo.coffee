@@ -28,3 +28,5 @@ $ ->
   $('#taskpost').submit ->
     post_task()
     false
+
+  $('header').click -> $('#taskpost').toggle()

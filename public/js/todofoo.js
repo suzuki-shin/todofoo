@@ -116,9 +116,12 @@
   $(function() {
     reflesh_tasklist();
     $('#task').focus();
-    return $('#taskpost').submit(function() {
+    $('#taskpost').submit(function() {
       post_task();
       return false;
+    });
+    return $('header').click(function() {
+      return $('#taskpost').toggle();
     });
   });
 

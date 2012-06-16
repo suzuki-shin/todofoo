@@ -27,15 +27,15 @@
 			<a class="brand" href="./">TODO FOO</a>
 			<div class="nav-collapse collapse">
 			  <ul class="nav">
-				<li class="">
-				  <a href="./">Hoge</a>
-				</li>
-				<li class="">
-				  <a href="./">Foo</a>
-				</li>
-				<li class="active">
-				  <a href="./">Bar</a>
-				</li>
+<!-- 				<li class=""> -->
+<!-- 				  <a href="./">Hoge</a> -->
+<!-- 				</li> -->
+<!-- 				<li class=""> -->
+<!-- 				  <a href="./">Foo</a> -->
+<!-- 				</li> -->
+<!-- 				<li class="active"> -->
+<!-- 				  <a href="./">Bar</a> -->
+<!-- 				</li> -->
 			  </ul>
 			</div>
 		  </div>
@@ -49,12 +49,12 @@
 			 ================================================== -->
 		<header class="jumbotron subhead" id="overview">
 		  <h1>TODO FOO</h1>
-		  <p class="lead">TODO FOO is a simple todo list</p>
+		  <p class="lead">is a simple todo list.</p>
 		</header>
 
-		<form id="taskpost" class="well form-inline" method="post" action="/task">
+		<form id="taskpost" class="well form-inline" method="post" action="/task" style="display:none">
 		  <input id="task" name="task" type="text" class="span10" placeholder="TODOを追加する？"/>
-		  <button type="submit" class="btn">submit</button>
+		  <button type="submit" class="btn">Add</button>
 		</form>
 		<table id="tasklist" class="table table-bordered form-inline">
 		  <tbody>
