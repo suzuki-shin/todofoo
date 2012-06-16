@@ -9,6 +9,22 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /js
+  static_dir: public/js
+
+- url: /css
+  static_dir: public/css
+
+- url: /img
+  static_dir: public/img
+
+- url: /manifest
+  static_dir: public/manifest
+  mime_type: text/cache-manifest
+
+- url: /st
+  static_dir: public/st
+
 - url: .*
   script: main.app
 
