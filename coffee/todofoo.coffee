@@ -17,6 +17,8 @@ reflesh_tasklist =->
     $('#tasklist tbody').empty().append(tasks_str)
   _get '/tasklist', _reflesh_tasklist, (data, status, xhr) -> _failure_func status
 
+
+
 #
 # events
 #
@@ -29,4 +31,6 @@ $ ->
     post_task()
     false
 
-  $('header').click -> $('#taskpost').toggle()
+  $('.nav li a').click ->
+    $('.pane').toggle()
+    $('.nav-icon').toggle()

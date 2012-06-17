@@ -3,70 +3,69 @@
   <head>
     <meta charset="utf-8" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
-	<link href="css/docs.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
-	  <meta name="apple-mobile-web-app-capable" content="yes" />
-	  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	  <meta name="format-detection" content="telephone=no" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/docs.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
 
-	  <title>TODO FOO</title>
-	</head>
-	<body data-spy="scroll" data-target=".subnav" data-offset="50">
-	  <!-- Navbar
-		   ================================================== -->
-	  <div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-		  <div class="container">
-			<button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			</button>
-			<a class="brand" href="./">TODO FOO</a>
-			<div class="nav-collapse collapse">
-			  <ul class="nav">
-<!-- 				<li class=""> -->
-<!-- 				  <a href="./">Hoge</a> -->
-<!-- 				</li> -->
-<!-- 				<li class=""> -->
-<!-- 				  <a href="./">Foo</a> -->
-<!-- 				</li> -->
-<!-- 				<li class="active"> -->
-<!-- 				  <a href="./">Bar</a> -->
-<!-- 				</li> -->
-			  </ul>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	  
-	  <div class="container">
-		<div id="notification"></div>
+    <title>TODO FOO</title>
+  </head>
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+    <!-- Navbar
+         ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./">TODO FOO</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a class="nav-icon"><i class="icon-plus"></i>Add</a>
+                <a class="nav-icon" style="display:none;"><i class="icon-list"></i>List</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div id="notification"></div>
 
-		<!-- Masthead
-			 ================================================== -->
-		<header class="jumbotron subhead" id="overview">
-		  <h1>TODO FOO</h1>
-		  <p class="lead">is a simple todo list.</p>
-		</header>
+      <!-- Masthead
+           ================================================== -->
+      <!--      <header class="jumbotron subhead" id="overview"> -->
+      <!--        <h1>TODO FOO</h1> -->
+      <!--        <p class="lead">is a simple todo list.</p> -->
+      <!--      </header> -->
 
-		<form id="taskpost" class="well form-inline" method="post" action="/task" style="display:none">
-		  <input id="task" name="task" type="text" class="span10" placeholder="TODOを追加する？"/>
-		  <button type="submit" class="btn">Add</button>
-		</form>
-		<table id="tasklist" class="table table-bordered form-inline">
-		  <tbody>
-		  </tbody>
-		</table>
+      <div class="pane" id="addcontent" style="display:none;">
+        <form id="taskpost" class="well form-inline" method="post" action="/task">
+          <input id="task" name="task" type="text" class="span10" placeholder="TODOを追加する？"/>
+          <button type="submit" class="btn">Add</button>
+        </form>
+      </div>
+      <div class="pane" id="listcontent">
+        <table id="tasklist" class="table table-bordered form-inline">
+          <tbody>
+          </tbody>
+        </table>
+      </div>
 
-
-	  </div>
-	  <script type="text/javascript" src="js/jquery.js"></script>
-	  <script type="text/javascript" src="js/bootstrap-tab.js"></script>
-	  <script type="text/javascript" src="js/bootstrap-button.js"></script>
-	  <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
-	  <script type="text/javascript" src="js/todofoo.js"></script>
-	</body>
-  </html>
+    </div>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-tab.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-button.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-collapse.js"></script>
+    <script type="text/javascript" src="/js/todofoo.js"></script>
+  </body>
+</html>

@@ -120,8 +120,9 @@
       post_task();
       return false;
     });
-    return $('header').click(function() {
-      return $('#taskpost').toggle();
+    return $('.nav li a').click(function() {
+      $('.pane').toggle();
+      return $('.nav-icon').toggle();
     });
   });
 

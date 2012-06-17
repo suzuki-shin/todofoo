@@ -1,2 +1,3 @@
 *.pyc
 public/img
+public/js/bootstrap*
