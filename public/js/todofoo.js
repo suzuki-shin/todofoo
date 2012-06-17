@@ -120,7 +120,7 @@
       post_task();
       return false;
     });
-    return $('.nav li a').click(function() {
+    return $('.navbar').click(function() {
       $('.pane').toggle();
       return $('.nav-icon').toggle();
     });

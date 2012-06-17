@@ -31,6 +31,6 @@ $ ->
     post_task()
     false
 
-  $('.nav li a').click ->
+  $('.navbar').click ->
     $('.pane').toggle()
     $('.nav-icon').toggle()
